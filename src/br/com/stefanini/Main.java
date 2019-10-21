@@ -24,9 +24,6 @@ public class Main {
         String filePath = scanner.nextLine();
 
         Database db = new Database(filePath);
-        for(Salesman salesman : db.getAllSalesmen()){
-            //System.out.println(salesman.toString());
-        }
         Customer oldestCustomer=null;
         int numberOfCustomerInvalidCpf = 0;
         int biggerAge = 0;
