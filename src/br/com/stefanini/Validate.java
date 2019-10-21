@@ -28,8 +28,6 @@ public class Validate {
     static public Salesman getWorstSalesmanFromList(List<Sale> saleList){
         HashMap<Salesman, Double> salesTotalPerSalesman = new HashMap<>();
         //<Salesman, totalSales>
-        //<Diego, 120>
-        //<Renata, 300>
         for(Sale sale: saleList){
             if(salesTotalPerSalesman.containsKey(sale.getSalesman())){
                 salesTotalPerSalesman.put(sale.getSalesman(), salesTotalPerSalesman.get(sale.getSalesman()) + sale.getTotalPrice());
